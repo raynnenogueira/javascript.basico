@@ -1,0 +1,106 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.menu {
+    width: 100%;
+    height: 75px;
+    background-color: rgb(12, 56, 50);
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li {
+    width: 150px;
+    float: right;
+}
+
+.menu a {
+    color: aliceblue;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(12, 56, 50);
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
+.menu a:hover {
+    background-color: #f4f4f4;
+    color: #555;
+}
+
+.menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.menu ul ul li a {
+    background-color: rgb(6, 94, 138);
+}
+
+label [for="bt_menu"] {
+    padding: 5px;
+    background-color: #222;
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+#bt_menu {
+    display: none;
+}
+
+label[for="btn_menu"] {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    label[for="bt_menu"] {
+        display: block;
+    }
+
+    #tb_menu:checked~ .menu {
+        margin-left: 0%;
+    }
+
+    .menu {
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+    }
+
+    .menu ul li {
+        width: 100%;
+        float: none;
+    }
+
+    .menu ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+
+    .menu ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+    }
+}

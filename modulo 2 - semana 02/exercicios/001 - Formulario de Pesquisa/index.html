@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagens/Button-White-Large.ico" type="image/x-icon">  <!----FAV ICON ------->
+    <link rel="stylesheet" href="style.css">  <!----ESTILO ------>
+    <title>Formulario de Pesquisa</title>
+</head>
+<body>
+    <div class="box">
+        <img src="./imagens/people.jpg" alt="pessoas trabalhando">
+        <div class="container">
+
+            <div class="text">
+                <h2>
+                    Formulario de Pesquisa
+                </h2>
+                <p>
+                    Obrigada por nos ajudar a melhorar a nosa plataforma!
+                </p>
+            </div>
+
+            <form action="page2.html">
+                <div class="containers name-container">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Coloque seu nome" required>
+                </div>
+
+                <div class="containers email-container">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Coloque seu email" required>
+                </div>
+
+                <div class="containers age-container">
+                    <label for="age">Idade:</label>
+                    <input type="number" name="idade" id="idade" placeholder="Idade">
+                </div>
+                    <br>
+                <div class="select-container">
+                    <label for="select">Qual opção descreve melhor sua função atual?</label>
+                    <select name="select" id="select" required>
+                        <option value="">Selecione a função atual</option>
+                        <option value="student">Estudante</option>
+                        <option value="job-time">Trabalho em tempo integral</option>
+                        <option value="student-job">Estudo em tempo integral</option>
+                        <option value="other">Outro</option>
+                    </select>                   
+                </div>
+
+                <div class="radio-container">
+                    <p>Você recomendaria a Empresa RN a um amigo?</p>
+                    <div id="lab1">
+                        <input type="radio" name="friend" id="def" checked>
+                        <label for="def" class="inputs"></label>
+                        <label for="def">Definitivamente</label>
+                    </div>
+
+                    <div id="lab2">
+                        <input type="radio" name="friend" id="may">
+                        <label for="may" class="inputs"></label>
+                        <label for="may">Talvez</label>
+                    </div>
+
+                    <div id="lab3">
+                        <input type="radio" name="friend" id="not">
+                        <label for="not" class="inputs"></label>
+                        <label for="not">Não</label>
+                    </div>
+                        <br>
+                    <div class="select2-container">
+                        <label for="select2">Qual é o seu recurso favorito?</label>
+                        <select name="select2" id="select2-container" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="challenges">Desafios</option>
+                            <option value="projects">Projetos</option>
+                            <option value="community">Comunidade</option>
+                            <option value="open">Código Aberto</option>
+                        </select>
+                    </div>
+                        <br>
+                    <div class="check-container">
+                        <p>
+                            O que você gostaria que fosse melhorado?
+                            (Marque quantas opções forem necessário)
+                        </p>
+                        <div class="lab">
+                            <input type="checkbox" name="best" id="front">
+                            <label for="front">Projetos Front-End</label>
+                        </div>
+
+                        <div class="lab">
+                            <input type="checkbox" name="best" id="back">
+                            <label for="back">Projetos Back-End</label>
+                        </div>
+
+                        <div class="lab">
+                            <input type="checkbox" name="best" id="data">
+                            <label for="data">Visualização de Dados</label>
+                        </div>
+
+                        <div class="lab">
+                            <input type="checkbox" name="best" id="challenges">
+                            <label for="challenges">Desafios</label>
+                        </div>
+
+                        <div class="lab">
+                            <input type="checkbox" name="best" id="open">
+                            <label for="open">Comunidade de Código Aberto</label>
+                        </div>
+
+                        <div class="lab">
+                            <input type="checkbox" name="best" id="help">
+                            <label for="help">Gitter Help Rooms</label>
+                        </div>
+
+                        <div class="lab">
+                            <input type="checkbox" name="best" id="video">
+                            <label for="video">Videos</label>
+                        </div>
+
+                        <div class="lab">
+                            <input type="checkbox" name="best" id="city">
+                            <label for="city">City Meetups</label>
+                        </div>
+
+                        <div class="lab">
+                            <input type="checkbox" name="best" id="wiki">
+                            <label for="wiki">Wiki</label>
+                        </div>
+
+                        <div class="lab">
+                            <input type="checkbox" name="best" id="forum">
+                            <label for="forum">Forum</label>
+                        </div>
+
+                        <div class="lab last-lab">
+                            <input type="checkbox" name="best" id="course">
+                            <label for="course">Cursos Adicionais</label>
+                        </div>
+                    </div>
+                        <br>
+                    <div class="text-container">
+                        <p>Algum comentário ou sugestão?</p>
+                        <textarea name="coment" id="coment" placeholder="Coloque seu comentário aqui"></textarea>
+                    </div>
+                    
+                    <input type="submit" name="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

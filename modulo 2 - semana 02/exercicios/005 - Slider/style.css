@@ -1,0 +1,12 @@
+.mySlides {display:none;}
+
+* {
+    background: linear-gradient(to right, #E3A198 , #E7C0BB);
+    font-family: 'Indie Flower', cursive;
+    font-size: 36px;
+}
+
+h2 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 36px;
+}
